@@ -51,8 +51,53 @@ void loop() {
         leftMotor.Run(0);
         rightMotor.Run(0);
         break;
+
+      case '0':
+        ESC.writeMicroseconds(800);
+        // Serial.println("0");
+        break;
+      case '1':
+        ESC.writeMicroseconds(890);
+        // Serial.println("1");
+        break;
+      case '2':
+        ESC.writeMicroseconds(980);
+        // Serial.println("2");
+        break;
+      case '3':
+        ESC.writeMicroseconds(1070);
+        // Serial.println("3");
+        break;
+      case '4':
+        ESC.writeMicroseconds(1160);
+        // Serial.println("4");
+        break;
+      case '5':
+        ESC.writeMicroseconds(1250);
+        // Serial.println("5");
+        break;
+      case '6':
+        ESC.writeMicroseconds(1340);
+        // Serial.println("6");
+        break;
+      case '7':
+        ESC.writeMicroseconds(1430);
+        // Serial.println("7");
+        break;
+      case '8':
+        ESC.writeMicroseconds(1520);
+        // Serial.println("8");
+        break;
+      case '9':
+        ESC.writeMicroseconds(1610);
+        // Serial.println("9");
+        break;
+      case 'q':
+        ESC.writeMicroseconds(1700);
+        // Serial.println("10");
+        break;
     }
-    Serial.println(cmd);
+    if (cmd != 'S') Serial.println(cmd);
   }
 
 }
